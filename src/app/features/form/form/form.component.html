@@ -1,0 +1,10 @@
+<div class="form-container">
+  <h2>Form Submission</h2>
+  <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+    <input formControlName="name" placeholder="Name" />
+    <input formControlName="phone" placeholder="Phone" />
+    <input formControlName="email" placeholder="Email" />
+    <input formControlName="address" placeholder="Address" />
+    <button type="submit">Submit</button>
+  </form>
+</div>
